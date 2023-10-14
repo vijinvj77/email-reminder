@@ -1,66 +1,80 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Email Reminder Web Application
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Overview
 
-## Learning Laravel
+The Email Reminder Web Application is a Laravel-based system that automates the process of sending recurring reminder emails to users on their specified date every month. It provides a user-friendly interface to manage reminders, allowing users to set up, edit, and delete email reminders. This application simplifies the process of sending routine reminders to individuals or groups, making it perfect for a wide range of use cases, such as personal task management, subscription renewals, or monthly newsletters.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Features
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- User Authentication: Secure user registration and login system.
+- Dashboard: User-friendly dashboard for managing reminders.
+- Create Reminders: Users can easily create new reminders with a title, message, and specific send date.
+- Edit and Delete: Users can edit or delete existing reminders as needed.
+- Monthly Scheduling: Reminders are automatically sent on the specified date every month.
+- Email Notifications: Email notifications are sent to the user as a reminder.
+- Customizable Templates: Ability to customize email templates.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+## Installation
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Follow these steps to get the Email Reminder Web Application up and running on your local machine:
 
-### Premium Partners
+1. **Prerequisites:** Make sure you have PHP, Composer, and Laravel installed. 
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+2. **Clone the repository:** 
+```bash
+  git clone https://github.com/vijinvj77/email-reminder.git
+```
+3. **Install Dependencies:**
+```bash
+  cd email-reminder
+  composer install
+```
+4. **Database Setup:**
+- Create a MySQL database.
+- Configure your .env file with your database credentials.
+- Run migrations and seeders:
+```bash
+    php artisan migrate --seed
+```
+5. **Start the Application:**
+```bash
+    php artisan serve
+```
+6. **Access the Application:**
+Open your web browser and go to http://localhost:8000 to access the application.
+    
+## Usage
 
-## Contributing
+1. **Register and Log In:** Create an account and log in.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+2. **Dashboard:** You will be redirected to your dashboard, where you can manage reminders.
 
-## Code of Conduct
+3. **Create Reminders:** Click on the "Create Reminder" button to create a new reminder. Fill in the title, message, and the date when you want the reminder to be sent.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+4. **Edit and Delete:** You can edit or delete existing reminders from the dashboard.
 
-## Security Vulnerabilities
+5. **Automatic Reminders:** The application will automatically send reminders on the specified date every month.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is open-source and available under the [MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Contributing
+
+Contributions are always welcome!
+
+
+
+## Contact
+
+For any inquiries or support, please contact vijinvj77@gmail.com.
+## Acknowledgments
+
+I'd like to thank the Laravel community for their amazing framework and the open-source community for their contributions.
