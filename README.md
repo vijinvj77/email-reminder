@@ -6,7 +6,7 @@
 
 ## Overview
 
-The Email Reminder Web Application is a Laravel-based system that automates the process of sending recurring reminder emails to users on their specified date every month. It provides a user-friendly interface to manage reminders, allowing users to set up, edit, and delete email reminders. This application simplifies the process of sending routine reminders to individuals or groups, making it perfect for a wide range of use cases, such as personal task management, subscription renewals, or monthly newsletters.
+The Email Reminder Web Application is a Laravel-based system that automates the process of sending recurring reminder emails to users on their specified date every month. It provides a user-friendly interface to manage reminders, allowing users to set up, edit, and delete email reminders. This application simplifies the process of sending routine reminders to individuals or groups, making it perfect for a wide range of use cases, such as personal task management, subscription renewals, etc.
 
 ## Features
 
