@@ -16,7 +16,6 @@ The Email Reminder Web Application is a Laravel-based system that automates the 
 - Edit and Delete: Users can edit or delete existing reminders as needed.
 - Monthly Scheduling: Reminders are automatically sent on the specified date every month.
 - Email Notifications: Email notifications are sent to the user as a reminder.
-- Customizable Templates: Ability to customize email templates.
 
 
 ## Installation
