@@ -1,23 +1,46 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+<!-- Main Content -->
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Total Reminders Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-list-ul"></i> Total Reminders
+                        </h5>
+                        <p class="card-text">10</p>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+            <!-- Active Reminders Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-check-circle"></i> Active Reminders
+                        </h5>
+                        <p class="card-text">5</p>
+                    </div>
+                </div>
+            </div>
 
-                    {{ __('You are logged in!') }}
+            <!-- Inactive Reminders Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-times-circle"></i> Inactive Reminders
+                        </h5>
+                        <p class="card-text">5</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</main>
 @endsection

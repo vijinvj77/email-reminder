@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #333;
+    padding-top: 50px;
+    transition: all 0.3s;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.sidebar li {
+    padding: 10px 15px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar .profile {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #555;
+}
+
+/* Add some styles for the active state if you want to highlight the selected menu item. */
+
+/* Main Content */
+.main-content {
+    margin-left: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Responsive Sidebar Active State */
+.sidebar.active {
+    left: 0;
+}
