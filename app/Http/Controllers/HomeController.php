@@ -23,6 +23,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $user = auth()->user();
+        $activeCount = $user->reminders()->where('is_active', true)->count();
+        $inactiveCount = $user->reminders()->where('is_active', false)->count();
+        $totalCount = $user->reminders()->count();
+
+        return view('home', compact('activeCount', 'inactiveCount', 'totalCount'));
     }
 }

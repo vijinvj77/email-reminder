@@ -12,7 +12,7 @@
                         <h5 class="card-title">
                             <i class="fas fa-list-ul"></i> Total Reminders
                         </h5>
-                        <p class="card-text">10</p>
+                        <p class="card-text">{{ $totalCount }}</p>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
                         <h5 class="card-title">
                             <i class="fas fa-check-circle"></i> Active Reminders
                         </h5>
-                        <p class="card-text">5</p>
+                        <p class="card-text">{{ $activeCount }}</p>
                     </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@
                         <h5 class="card-title">
                             <i class="fas fa-times-circle"></i> Inactive Reminders
                         </h5>
-                        <p class="card-text">5</p>
+                        <p class="card-text">{{ $inactiveCount }}</p>
                     </div>
                 </div>
             </div>
