@@ -32,6 +32,10 @@ body {
     padding: 10px 15px;
 }
 
+.sidebar li.active {
+    background: #212529;
+}
+
 .sidebar a {
     color: white;
     text-decoration: none;

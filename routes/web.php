@@ -17,11 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Email Verification Routes
-Route::get('/email/verify', 'Auth\VerificationController@show')->name('verification.notice');
-Route::get('/email/verify/{id}', 'Auth\VerificationController@verify')->name('verification.verify');
-Route::post('/email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
-
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::prefix('/reminders')->name('reminders.')->group(function () {
+    Route::get('/', [App\Http\Controllers\ReminderController::class, 'index'])->name('list');
+    Route::get('/create', [App\Http\Controllers\ReminderController::class, 'create'])->name('create');
+    Route::post('/store', [App\Http\Controllers\ReminderController::class, 'store'])->name('store');
+    Route::get('/edit/{reminder}', [App\Http\Controllers\ReminderController::class, 'edit'])->name('edit');
+    Route::post('/update/{reminder}', [App\Http\Controllers\ReminderController::class, 'update'])->name('update');
+    Route::post('/delete/{reminder}', [App\Http\Controllers\ReminderController::class, 'delete'])->name('delete');
+});
